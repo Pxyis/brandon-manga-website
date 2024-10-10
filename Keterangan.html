@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+	<link rel="shortcut icon" href="https://i.ibb.co.com/XC6Mb3x/p-removebg-preview.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+	<title>Keterangan</title>
+	<style>
+		body {
+    		font-family: 'Poppins', sans-serif;
+		}
+		.header{
+			background-color: black; 
+			width: 100%;
+			height: 150px; 
+			margin-top: 0px;
+			position: absolute;
+		}
+		.berandabawah{
+			position: absolute;
+			background-color: darkgrey; 
+			width: 100%; 
+			height: 2320px; 
+			margin-top: 150px;
+		}
+		.berandaisi{
+			position:absolute;
+			background-color:whitesmoke; 
+			width: 88.8%; 
+			height: 870px; 
+			margin-left: 5.5%; 
+			border-radius: 5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.text{
+			text-decoration: none; 
+			color: white; 
+			font-family: fantasy; 
+			font-weight: medium; 
+			font-size: 25px
+		}
+		.gmbrberanda{
+			width: 240px; 
+			height: 150px; 
+			float: left; 
+			clear: both; 
+			bottom: 0pt;
+		}
+		.judulgmbrberanda{
+			position: relative;
+			background-color: whitesmoke; 
+			width: 240px; 
+			float: left; 
+			clear: both;
+		}
+		.chaptergmbrberanda{
+			position: relative;
+			background-color: lightgrey; 
+			float: left; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		.searchicon{
+			display: block;
+			padding: 0 10px;
+			background: #4c4c4c;
+			color: #fff;
+			font-weight: 700; 
+			border: none;
+		} 
+		.copyright{
+			position: absolute; 
+			background-image: url(https://i.pinimg.com/originals/f2/8d/5d/f28d5d909fdd8b5e8e35ef499037126f.jpg); 
+			width: 100%; 
+			height: 180px; 
+			bottom: 0px; 
+		}
+		.perpus{
+			position:absolute;background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/de5vho1-16621ed6-e025-43a4-be96-4ea977ec108f.png/v1/fill/w_1033,h_773,q_70,strp/akatsuki_wallpaper__nxb_ninja_tribes__by_maxiuchiha22_de5vho1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGU1dmhvMS0xNjYyMWVkNi1lMDI1LTQzYTQtYmU5Ni00ZWE5NzdlYzEwOGYucG5nIiwid2lkdGgiOiI8PTE0NDMifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YeNdmo44LVyUb_leYxuWe9rEqa7rEp-iZKZqsdyjpFk); 
+			width: 90%; 
+			height: 160px; 
+			margin-left: 75px; 
+			margin-top: 20px; 
+			border-radius: 30px;
+		}
+		.genre{
+			width: 10%;
+			background: #f0f2f5;  
+			font-size: 14px; 
+			border: 0px; 
+			height: 30px; 
+			border-radius: 5px; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center; 
+			color: blue;
+		}
+		.a{
+			animation-name: e;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes e{
+			0%{left: 0%;}
+			50%{left: 31%;}
+			100%{left: 0%;}
+		}
+		.b{
+			animation-name: f;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes f{
+			0%{left: 86%;}
+			50%{left: 57.3%;}
+			100%{left: 86%;}
+		}
+		.active{
+			background: linear-gradient(140deg, hsl(312, 100%, 50%) 0%, hsl(248, 100%, 72%)	 50%, hsl(270, 100%, 50%) 75%)
+		}
+		.tabelbawah{
+			height: 30px; 
+			font-family: arial; 
+			clear: both; 
+			border: 0pt;
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.tabelbawahkiri{
+			height: 30px; 
+			font-family: arial; 
+			border: 0pt;
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.isiform{
+			width: 150%; 
+			height: 40px; 
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%);
+			position: absolute;
+			border: 1px solid whitesmoke;
+			border-radius: 5px;
+			color: white;
+			text-align: center;
+			font-size: 16.5px;
+			font-family: "Trirong", serif;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-family: cursive;
+		}
+		li a:hover{
+			background-color: #212;
+			color: white;
+		}
+		.input {
+			padding: 0; 
+			height: 30px; 
+			width: 150px; 
+			border-radius: 5px;
+			border: 1px solid #f0f2f5; 
+			background: #f0f2f5; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		a:hover{
+			color: red; 
+			word-spacing: 0.5cm
+		}
+		h1{
+			font-size: 30px; 
+			color: white; 
+			font-family: sans-serif;
+		}
+		.button {
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%);
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+		}
+
+		.button:hover {background-color: #3e8e41}
+
+		.button:active {
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(348, 83%, 47%)	30%, hsl(336, 100%, 50%) 40%);
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+		.c{
+			animation-name: popup;
+			animation-duration: 0.8s;
+			animation-iteration-count: 1;
+		}
+		@keyframes popup{
+			0%{top: 25px}
+			100%{top: 0px}
+		}
+	</style>
+</head>
+<body>
+	<body style="margin:0">
+	<div class="header" style="margin-top: 0px">
+		<div>
+			<img src="https://cdn.dribbble.com/users/7049949/screenshots/16300841/media/3313f3b598138cad0b897434c5963cf3.png?resize=400x300&vertical=center" style="position: relative;width: 130px; height: 110px; float: left;">
+			<h1 style="position: relative; float: left;margin-top: 30px;">| BRANDON MANGA</h1>
+		</div>
+		<div  style="position: absolute;margin-left: 80%; float: left;margin-top: 30px;">
+			<input value name="s" id="s" placeholder="Brandon Manga" type="text" class="input">
+		</div>
+		<div style="position: absolute;margin-left: 92%; float: left;margin-top: 30px;">
+			<form>
+			<input class="searchicon" value="Cari" type="submit" style="width:45px; height: 30px;">
+		</form>
+		</div>
+		<div style="position:absolute; margin-left: 66%; margin-top: 30px;">
+			<video src="https://www.shutterstock.com/shutterstock/videos/1110662381/preview/stock-footage-icon-animation-sharingan-k-video-footage-alpha-channel-transparency.webm" autoplay muted loop style="width: 150px"></video>
+		</div>
+		<div style="position:absolute; margin-left: 39%; margin-top: 0px;">
+			<img src="https://wallpaperaccess.com/full/203905.png" style="width: 300px; height: 100px;">
+		</div>
+		<div style="position: absolute; margin-top: 85px; margin-left: 510px">
+			<a class="text"><a class="text" href="file:///C:/Users/HP/Downloads/file%20projek/index.html">Beranda </a><a href="Pembelian.html" class="text">| Pembelian </a><a href="Keterangan.html" class="text">| Keterangan</a></a>
+		</div>
+		<div style="position:absolute;margin-left: 79.3%; margin-top: 80px;">
+			<a href="https://www.instagram.com/bear__bran/"><img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" style=" width:60px; height: 60px; "></a>
+			<a href="https://www.tiktok.com/@bear.bran_"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_1280.png" style=" width:60px; height: 60px; margin-left:14pt"></a>
+			<a href="user.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsLH5A8wMAUoyWgL5fKpOrbwRVzm_a2BRzQ&s" style=" width:50px; height: 45px; margin-left:14pt; margin-bottom: 5pt;"></a>
+		</div>
+	</div>
+
+	<div class="berandabawah c">
+		<div style="display: flex; align-items: center; text-align: center; justify-content: center; background-color:">
+			<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; position: relative; float: left; color: white;">About</h1>
+			<div style="background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%); color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:150px; display: flex; align-items: center; text-align: center; justify-content: center;">Us</h1>
+			</div>
+		</div>
+
+
+		<div class="berandaisi" style="margin-top: 0px;">
+			<p align="center" style="margin-inline: 3%; margin-top: 2%;">Selamat datang di Brandon Manga! Ini adalah platform online yang didedikasikan untuk para penggemar manga di seluruh dunia. Saya memahami betapa pentingnya manga dalam kehidupan sehari-hari dan bagaimana cerita-cerita yang diceritakan melalui gambar dapat menginspirasi, menghibur, dan mendidik. Dengan semangat ini, saya hadir untuk menyediakan koleksi manga terlengkap dan terkini, sehingga Anda bisa menemukan dan menikmati karya-karya terbaik dari berbagai genre.</p>
+
+			<p align="center" style="margin-inline: 3%;">Brandon Manga dibangun oleh seorang pencinta manga yang berpengalaman, yang memiliki komitmen untuk menyajikan produk berkualitas tinggi dan layanan pelanggan yang memuaskan. Saya percaya bahwa setiap pembaca berhak mendapatkan akses yang mudah dan cepat terhadap manga favorit mereka. Oleh karena itu, saya telah merancang situs Brandon Manga dengan antarmuka yang user-friendly, memungkinkan Anda menjelajahi koleksi saya dengan mudah dan menemukan judul-judul yang sesuai dengan selera Anda.</p>
+
+			<p align="center" style="margin-inline: 3%;">Di Brandon Manga, saya tidak hanya menjual manga, tetapi juga berusaha untuk membangun dunia digital baru bari para penggemar manga. Saya ingin menciptakan ruang di mana para penggemar dapat menikmati manga yang dijual diseluruh dunia melalui web saya. Saya percaya bahwa manga bukan hanya sekadar bacaan; ia adalah budaya yang menghubungkan orang-orang dari berbagai latar belakang. Bergabunglah dengan komunitas saya dan ikuti perkembangan terbaru mengenai rilis manga, acara, dan promosi khusus.</p>
+
+			<p align="center" style="margin-inline: 3%;">Kami berkomitmen untuk memberikan pengalaman berbelanja yang aman dan menyenangkan. Saya bekerja keras untuk memastikan setiap transaksi diproses dengan cepat dan aman. Dengan berbagai pilihan metode pembayaran dan pengiriman yang fleksibel, saya ingin memastikan Anda dapat menikmati manga favorit Anda tanpa kendala. Terima kasih telah mengunjungi Brandon Manga, dan kami berharap Anda menemukan banyak cerita yang menarik untuk dibaca!</p>
+
+			<img src="https://i.ibb.co.com/hVSQ1h0/Buruan-Beli-di-Brandon-Manga.jpg" style="width: 264px; height: 374px; margin-left: 3%;">
+			<img src="https://i.ibb.co.com/rdN0nTJ/Buruan-Beli-di-Brandon-Manga-1.jpg" style="width: 264px; height: 374px; margin-left: 16%;">
+			<img src="https://i.ibb.co.com/CsBRB0x/Buruan-Beli-di-Brandon-Manga-2.jpg" style="width: 264px; height: 374px; margin-left: 11.5%;">
+		</div>
+
+		<div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-top: 940px;">
+			<div style="background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%); color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:150px; display: flex; align-items: center; text-align: center; justify-content: center;">Kritik</h1>
+			</div>
+			<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; position: relative; float: left; margin-left:10px; color: white;">dan</h1>
+			<div style="background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%); color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:150px; display: flex; align-items: center; text-align: center; justify-content: center;">Saran</h1>
+			</div>
+		</div>
+
+		<div class="berandaisi" style="margin-top: 30px; height: 1120px;">
+			<p align="center" style="margin-inline: 3%; margin-top: 2%;">Mohon maaf sebesar besarnya jika ada beberapa produk yang mungking para mangaers tidak temukan. Mimin usahakan pasti displaykan produk yang anda ingin kan. Tapi biar mimin tau produk apa yang ingin sobat mangaers inginkan, tulis di kolom komentar, kritik, dan saran di bawah ini. Setelah para sobat mangaers mengisi di kolom komentar, kritik, dan sarankan, tinggal tunggu updatenya saja ya mangaers. Mimin jamin pasti produk yang sobat inginkan akan muncul sendirinya. See u in the next manga!!!!</p>
+
+			<div style="position : relative;background-color: whitesmoke; width: 40%; float: left; margin-left: 3%; margin-top: 3%; height: 70%; ">
+							<form>
+								<div class="tabelbawah" style="margin-top: 0px;">
+									Kritik &#128540;
+								</div>
+								<div class="tabelbawah">
+									
+								</div>
+								<div class="tabelbawah">
+									Saran &#128140;
+								</div>
+								<div class="tabelbawah">
+									
+								</div>
+								<div class="tabelbawah">
+									Produk yang Sobat Mangaers Inginkan &#128571;
+								</div>
+								<div class="tabelbawah">
+									
+								</div>
+								<div class="tabelbawah">
+									Tempat Diskusi Sobat Mangaers &#128572;
+								</div>
+								<div class="tabelbawah">
+									
+								</div>
+								<div class="tabelbawah" style="margin-top: 80px">
+									<input type="submit" name="a" value="Submit &#128640;" class="button">
+								</div>	
+							</form>
+							<div class="tabelbawah" style="margin-top: 80px">
+								<a href="index.html"><button class="button" >Baca Lagi &#128643;</button></a>
+							</div>
+							<div class="tabelbawah" style="margin-top: 80px">
+								<a href="Pembelian.html"><button class="button" >Beli Lagi &#128647;</button></a>
+							</div>
+						</div>
+						<div style="position : relative;background-color: whitesmoke; width: 35.45%; float: left; margin-top: 3%;">
+							<form>
+								<div class="tabelbawahkiri" style="margin-top: 0px;">
+									:&nbsp;<textarea class="isiform" style="height: 100px;"></textarea>
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									:&nbsp;<textarea class="isiform" style="height: 100px;"></textarea>
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									:&nbsp;<textarea class="isiform" style="height: 100px;"></textarea>
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									:&nbsp;<textarea class="isiform" style="height: 100px;"></textarea>
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+							</form>
+						</div>
+		</div>
+	</div>
+</body>
+</html>

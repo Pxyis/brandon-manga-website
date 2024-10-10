@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+	<link rel="shortcut icon" href="https://i.ibb.co.com/XC6Mb3x/p-removebg-preview.png">
+	<title>Brandon Manga</title>
+	<style>
+		.header{
+			background-color: black; 
+			width: 100%;
+			height: 150px; 
+			margin-top: 0pt; 
+			z-index: +4;
+			position: fixed;
+		}
+		.berandabawah{
+			position: absolute;
+			background-color: darkgrey; 
+			width: 100%; 
+			height: 3980px; 
+			margin-top: 150px;
+		}
+		.berandaisi{
+			position:absolute;
+			background-color:whitesmoke; 
+			width: 90%; 
+			height: 3740px; 
+			margin-left: 75px; 
+			margin-top: 205px; 
+			border-radius: 30px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.text{
+			text-decoration: none; 
+			color: white; 
+			font-family: fantasy; 
+			font-weight: medium; 
+			font-size: 25px
+		}
+		.gmbrberanda{
+			width: 240px; 
+			height: 150px; 
+			float: left; 
+			clear: both; 
+			bottom: 0pt;
+		}
+		.judulgmbrberanda{
+			position: relative;
+			background-color: whitesmoke; 
+			width: 240px; 
+			float: left; 
+			clear: both;
+		}
+		.chaptergmbrberanda{
+			position: relative;
+			background-color: lightgrey; 
+			width: 240px;
+			float: left; 
+			clear: both; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		.searchicon{
+			display: block;
+			padding: 0 10px;
+			background: #4c4c4c;
+			color: #fff;
+			font-weight: 700; 
+			border: none;
+		} 
+		.copyright{
+			position: absolute; 
+			background-image: url(https://i.pinimg.com/originals/f2/8d/5d/f28d5d909fdd8b5e8e35ef499037126f.jpg); 
+			width: 100%; 
+			height: 180px; 
+			bottom: 0px; 
+			font-family: "Trirong", sans-serif;
+		}
+		.perpus{
+			position:absolute;background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/de5vho1-16621ed6-e025-43a4-be96-4ea977ec108f.png/v1/fill/w_1033,h_773,q_70,strp/akatsuki_wallpaper__nxb_ninja_tribes__by_maxiuchiha22_de5vho1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGU1dmhvMS0xNjYyMWVkNi1lMDI1LTQzYTQtYmU5Ni00ZWE5NzdlYzEwOGYucG5nIiwid2lkdGgiOiI8PTE0NDMifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YeNdmo44LVyUb_leYxuWe9rEqa7rEp-iZKZqsdyjpFk); 
+			width: 90%; 
+			height: 160px; 
+			margin-left: 75px; 
+			margin-top: 20px; 
+			border-radius: 30px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.genre{
+			width: 10%;
+			background: #f0f2f5;  
+			font-size: 14px; 
+			border: 0px; 
+			height: 30px; 
+			border-radius: 5px; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center; 
+			color: blue;
+		}
+		input {
+			padding: 0; 
+			height: 30px; 
+			width: 150px; 
+			border-radius: 5px;
+			border: 1px solid #f0f2f5; 
+			background: #f0f2f5; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		a:hover{
+			color: red; 
+			word-spacing: 0.5cm
+		}
+		h1{
+			font-size: 30px; 
+			color: white; 
+			font-family: sans-serif;
+		}
+		
+	</style>
+</head>
+<body style="margin : auto">
+	<div class="header">
+		<div>
+			<img src="https://cdn.dribbble.com/users/7049949/screenshots/16300841/media/3313f3b598138cad0b897434c5963cf3.png?resize=400x300&vertical=center" style="position: relative;width: 130px; height: 110px; float: left;">
+			<h1 style="position: relative; float: left;margin-top: 30px;">| BRANDON MANGA</h1>
+		</div>
+		<div  style="position: absolute;margin-left: 80%; float: left;margin-top: 30px;">
+			<input value name="s" id="s" placeholder="Brandon Manga" type="text">
+		</div>
+		<div style="position: absolute;margin-left: 92%; float: left;margin-top: 30px;">
+			<form>
+			<input class="searchicon" value="Cari" type="submit" style="width:45px; height: 30px;">
+		</form>
+		</div>
+		<div style="position:absolute; margin-left: 66%; margin-top: 30px;">
+			<video src="https://www.shutterstock.com/shutterstock/videos/1110662381/preview/stock-footage-icon-animation-sharingan-k-video-footage-alpha-channel-transparency.webm" autoplay muted loop style="width: 150px"></video>
+		</div>
+		<div style="position:absolute; margin-left: 39%; margin-top: 0px;">
+			<img src="https://wallpaperaccess.com/full/203905.png" style="width: 300px; height: 100px;">
+		</div>
+		<div style="position: absolute; margin-top: 85px; margin-left: 510px">
+			<a class="text"><a class="text" href="file:///C:/Users/HP/Downloads/file%20projek/index.html">Beranda </a><a href="Pembelian.html" class="text">| Pembelian </a><a href="Keterangan.html" class="text">| Keterangan</a></a>
+		</div>
+		<div style="position:absolute;margin-left: 79.3%; margin-top: 80px;">
+			<a href="https://www.instagram.com/bear__bran/"><img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" style=" width:60px; height: 60px; "></a>
+			<a href="https://www.tiktok.com/@bear.bran_"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_1280.png" style=" width:60px; height: 60px; margin-left:14pt"></a>
+			<a href="user.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsLH5A8wMAUoyWgL5fKpOrbwRVzm_a2BRzQ&s" style=" width:50px; height: 45px; margin-left:14pt; margin-bottom: 5pt;"></a>
+		</div>
+	</div>
+
+
+	<div class="berandabawah">
+		<div class="perpus">
+			<h2 style="color: whitesmoke; font-family: cursive;" align="center">Perpustakaan Komik</h2>
+			<p style="color: whitesmoke; font-family: arial;" align="center">Jelajahi <b>16</b> judul komik dan <b>3120</b> jumlah chapter yang tersedia di Brandon Manga.</p>
+			<div>
+				<form style="width:100%; display: flex;align-items: center; text-align: center; justify-content: center;">
+					<select class="genre" style="position: relative; float: left;">
+						<option>Filter</option>
+						<option>Peringkat</option>
+						<option>Rilis</option>
+						<option>Abjad</option>
+						<option>Histori</option>
+            		</select>
+            		<select class="genre" style="position: relative; float: left; margin-left: 20px">
+						<option>Genre 1</option>
+						<option>Fantasi</option>
+						<option>Isekai</option>
+						<option>Comedy</option>
+						<option>Romance</option>
+						<option>Aksi</option>
+						<option>Drama</option>
+            		</select>
+            		<select class="genre" style="position: relative; float: left; margin-left: 20px">
+						<option>Genre 2</option>
+						<option>Fantasi</option>
+						<option>Isekai</option>
+						<option>Comedy</option>
+						<option>Romance</option>
+						<option>Aksi</option>
+						<option>Drama</option>
+            		</select>
+            		<select class="genre" style="position: relative; float: left; margin-left: 20px">
+            			<option>Tayang</option>
+            			<option>Belum Tayang</option>
+						<option>Ongoing</option>
+						<option>Trailer</option>
+						<option>Tamat</option>
+            		</select>
+            		<select class="genre" style="position: relative; float: left; margin-left: 20px">
+						<option>Umur</option>
+						<option>10+</option>
+						<option>13+</option>
+						<option>15+</option>
+						<option>17+</option>
+            		</select>
+            		<input class="searchicon" value="Cari" type="submit" style="position: relative; float: left; margin-left: 10px; width:45px; height: 30px; background: hsl(240, 60%, 35%)">
+				</form>
+			</div>
+		</div>
+	
+
+
+		<div class="berandaisi">
+			<h2 align="center" style="font-family: cursive; ">Brandon Manga - Baca Komik</h2>
+			<hr width="90%" color="blue">
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%;">
+				<p style="font-family:sans-serif; " align="center">Selamat datang di website <b>Brandon Manga</b>. Membaca manga adalah cara yang menyenangkan dan menarik untuk mengeksplorasi berbagai cerita dan budaya. Setiap halaman dipenuhi dengan ilustrasi yang hidup dan alur cerita yang penuh imajinasi, dari aksi petualangan hingga drama yang mendalam. Selain sebagai hiburan, manga juga memberikan wawasan tentang nilai-nilai budaya Jepang dan pelajaran hidup yang mendalam. Baik untuk pembaca pemula maupun penggemar setia, manga menawarkan pengalaman membaca yang unik, dengan karakter-karakter yang mudah dicintai dan plot yang selalu membuat penasaran. Jadi, mulailah membaca manga dan biarkan imajinasimu melayang!</p>
+				<h3 style="font-family:cursive; color: black;">Baca Manga Terpopuler Minggu Ini</h3>
+				<div style="float: left;border-style: ridge;">
+					<a href="Sinopsis gambar 1.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/2021/03/Komik-Tsue-to-Tsurugi-no-Wistoria.jpg?resize=240,150" class="gmbrberanda">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%;">Tsue to Tsurugi no Wistoria<br><font color="grey">Fantasi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 45</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 2.8%; border-style: ridge;">
+					<a href="Sinopsis gambar 2.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/2021/02/Komik-Ore-wa-Subete-wo-Parry-Suru.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">Ore wa Subete wo Parry Suru<br><font color="grey">Fantasi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 10</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 3%; border-style: ridge;">
+					<a href="Sinopsis gambar 3.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Maou-Gun-Saikyou-no-Majutsushi-wa-Ningen-datta.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">Maou Gun Saikyuu no Majusushi<br><font color="grey">Isekai</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 24</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 3%; border-style: ridge;">
+					<a href="Sinopsis gambar 4.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/2020/05/Komik-Oshi-no-Ko.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">Oshi no Ko<br><font color="grey">Drama</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 162</p>
+						</div>
+				</div>
+			</div>
+
+
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%; margin-top: 27.5%;">
+					<div style="float: left;border-style: ridge;">
+						<a href="Sinopsis gambar 5.html"><img src="https://cover.komiku.id/wp-content/uploads/2022/08/Komik-Gimai-Seikatsu.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;"></a>
+							<div class="judulgmbrberanda">
+							<a href="" style="text-decoration: none; color: black; word-spacing: 0pt;"><p style="margin-left: 2%">Gimai Seikatsu<br><font color="grey">Romance</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 20</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 2.8%; border-style: ridge;">
+						<a href="Sinopsis gambar 6.html"><img src="https://cover.komiku.id/wp-content/uploads/2023/04/Back-Isekai-Shikkaku.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;"></a>
+							<div class="judulgmbrberanda">
+							<a href="" style="text-decoration: none; color: black; word-spacing: 0pt;"><p style="margin-left: 2%">Isekai Shikkaku<br><font color="grey">Isekai</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 51</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 3%; border-style: ridge;">
+						<a href="Sinopsis gambar 7.html" ><img src="https://cover.komiku.id/wp-content/uploads/2024/07/A1-Shikanoko-Nokonoko-Koshitantan.png?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;"></a>
+							<div class="judulgmbrberanda">
+							<a href="" style="text-decoration: none; color: black; word-spacing: 0pt;"><p style="margin-left: 2%">Shikanoko Nokonoko Koshitantan<br><font color="grey">Comedy</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 38</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 3%; border-style: ridge;">
+						<a href="Sinopsis gambar 8.html"><img src="https://cover.komiku.id/wp-content/uploads/2019/03/Fairy-Tail-100-Years-Quest.png?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;"></a>
+							<div class="judulgmbrberanda">
+							<a href="" style="text-decoration: none; color: black; word-spacing: 0pt;"><p style="margin-left: 2%">Fairy Tail : 100 Years Quest<br><font color="grey">Fantasi</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 167</p>
+							</div>
+					</div>
+			</div>
+
+
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%;">
+				<p align="center" style="margin-top: 60%; font-family: sans-serif;">Beberapa judul manga ini tidak hanya menghadirkan kisah yang menarik dan karakter yang kuat, tetapi juga telah berhasil mendapatkan popularitas sedemikian rupa sehingga diadaptasi menjadi serial anime yang sangat dinanti-nantikan. Dengan alur cerita yang mendalam, ilustrasi yang memikat, serta pengembangan karakter yang matang, versi animasi dari manga-manga ini memberikan pengalaman visual dan emosional yang lebih hidup bagi para penggemarnya. Adaptasi anime tersebut mampu menghadirkan nuansa yang berbeda, memperkuat elemen-elemen yang sudah dicintai dalam versi manga, sekaligus memperluas jangkauan penonton ke mereka yang mungkin belum terbiasa membaca manga. Jadi, jika Anda menikmati kisah-kisah seru dengan dunia fantasi yang mendalam, adaptasi anime dari manga ini patut Anda saksikan untuk mendapatkan pengalaman hiburan yang lebih lengkap.</p>
+				<h4 align="center" style="font-family: cursive;">Salah Satunya Adalah Serial Anime Oshi no Ko</h4>
+				<iframe style="margin-left:25%" width="560" height="315" src="https://www.youtube.com/embed/MsRwD1363QU?si=EBpxpBZlGV7o4hq_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+
+
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%; margin-top: 4%">
+				<h3 style="font-family:cursive; color: black;">Baca Manga Terpopuler Sepanjang Masa</h3>
+				<div style="float: left;border-style: ridge;">
+					<a href="Sinopsis gambar 9.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/2023/09/Back-Boruto-Two-Blue-Vortex.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%;">Boruto : Two Blue Vortex<br><font color="grey">Aksi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 17</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 2.8%; border-style: ridge;">
+					<a href="Sinopsis gambar 10.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-One-Piece.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">One Piece<br><font color="grey">Aksi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 1127</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 3%; border-style: ridge;">
+					<a href="Sinopsis gambar 11.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Boruto.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">Boruto : Naruto Next Generations<br><font color="grey">Aksi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 80</p>
+						</div>
+				</div>
+				<div style="float: left; margin-left: 3%; border-style: ridge;">
+					<a href="Sinopsis gambar 12.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-One-Punch-Man.png?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+						<div class="judulgmbrberanda">
+						<p style="margin-left: 2%">One Punch Man<br><font color="grey">Aksi</font></p></a>
+						</div>
+						<div class="chaptergmbrberanda">
+							<p>Chapter 254</p>
+						</div>
+				</div>
+			</div>
+
+
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%; margin-top: 27.5%;">
+					<div style="float: left;border-style: ridge;">
+						<a href="Sinopsis gambar 13.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Black-Clover.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+							<div class="judulgmbrberanda">
+							<p style="margin-left: 2%">Black Clover<br><font color="grey">Aksi</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 373</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 2.8%; border-style: ridge;">
+						<a href="Sinopsis gambar 14.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Tensei-Shitara-Slime-Datta-Ken.png?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+							<div class="judulgmbrberanda">
+							<p style="margin-left: 2%">Tensei Shitara Slime Datta Ken<br><font color="grey">Isekai</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 117</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 3%; border-style: ridge;">
+						<a href="Sinopsis gambar 15.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Boku-no-Hero-Academia.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+							<div class="judulgmbrberanda">
+							<p style="margin-left: 2%">Boku no Hero Academia<br><font color="grey">Comedy</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 430</p>
+							</div>
+					</div>
+					<div style="float: left; margin-left: 3%; border-style: ridge;">
+						<a href="Sinopsis gambar 16.html" style="text-decoration: none; color: black; word-spacing: 0pt;"><img src="https://cover.komiku.id/wp-content/uploads/Manga-Kimetsu-no-Yaiba.jpg?resize=240,150" style="width: 240px; height: 150px; float: left; clear: both; bottom: 0pt;">
+							<div class="judulgmbrberanda">
+							<p style="margin-left: 2%">Kimetsu no Yaiba<br><font color="grey">Aksi</font></p></a>
+							</div>
+							<div class="chaptergmbrberanda">
+								<p>Chapter 205</p>
+							</div>
+					</div>
+			</div>
+
+			<div style="background-color: whitesmoke; width: 90%; margin-left:5%; margin-right:5%;">
+				<p align="center" style="margin-top: 60%; font-family: sans-serif;">Dari banyaknya pilihan manga <b>terbaik sepanjang masa</b> tentunya pasti ada 3 manga yang menjadi The Greatest of All Time dan dibawah ini saya akan menampilan 3 trailer manga <b>terbaik sepanjang masa</b> versi mimin</p>
+				<h4 align="center" style="font-family: cursive; letter-spacing: 5pt;">Boruto : Two <font color="blue">Blue</font> <font color="darkyellow">Vortex</font></h4>
+				<iframe style="margin-left:24.5%" width="560" height="315" src="https://www.youtube.com/embed/38CMueLi7Dg?si=Y48mBQ6C0XsnWK2r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				<h4 align="center" style="font-family: cursive; letter-spacing: 5pt;">Tensei Shitara <font color="blue">Slime Datta Ken</font></h4>
+				<iframe style="margin-left:24.5%" width="560" height="315" src="https://www.youtube.com/embed/YfIZahPXfpo?si=v5iEzLHvbkPiS96_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+				<h4 align="center" style="font-family: cursive; letter-spacing:5pt">Black <font color="red">Clover</font></h4>
+				<iframe style="margin-left:24.5%" width="560" height="315" src="https://www.youtube.com/embed/zMQbMCnFOlU?si=iHZUuqJkjgYf60ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="copyright font-effect-fire">
+			<p style="color: lightgrey; margin-top: 60px" align="center">Copyright &copy; 2024 by Brandon Manga. All rights reserved.</p>
+			<p style="color: lightgrey; margin-top: 10px" align="center">Designed & Created by Brandon Alexandro Sutanto XIH-05</.</p>
+		</div>
+	</div>
+</body>
+</html>

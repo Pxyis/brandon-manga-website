@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+	<link rel="shortcut icon" href="https://i.ibb.co.com/XC6Mb3x/p-removebg-preview.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+	<title>Brandon Profile</title>
+	<style>
+		body {
+    		font-family: 'Poppins', sans-serif;
+		}
+		.header{
+			background-color: black; 
+			width: 100%;
+			height: 150px; 
+			margin-top: 0px;
+			position: absolute;
+		}
+		.berandabawah{
+			position: absolute;
+			background-color: darkgrey; 
+			width: 100%; 
+			height: 1320px; 
+			margin-top: 150px;
+		}
+		.berandaisi{
+			position:relative;
+			float: left;
+			background-color:whitesmoke; 
+			width: 57%; 
+			height: 600px; 
+			margin-left: 5.5%; 
+			border-radius: 5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.text{
+			text-decoration: none; 
+			color: white; 
+			font-family: fantasy; 
+			font-weight: medium; 
+			font-size: 25px
+		}
+		.gmbrberanda{
+			width: 240px; 
+			height: 150px; 
+			float: left; 
+			clear: both; 
+			bottom: 0pt;
+		}
+		.judulgmbrberanda{
+			position: relative;
+			background-color: whitesmoke; 
+			width: 240px; 
+			float: left; 
+			clear: both;
+		}
+		.chaptergmbrberanda{
+			position: relative;
+			background-color: lightgrey; 
+			float: left; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		.searchicon{
+			display: block;
+			padding: 0 10px;
+			background: #4c4c4c;
+			color: #fff;
+			font-weight: 700; 
+			border: none;
+		} 
+		.copyright{
+			position: absolute; 
+			background-image: url(https://i.pinimg.com/originals/f2/8d/5d/f28d5d909fdd8b5e8e35ef499037126f.jpg); 
+			width: 100%; 
+			height: 180px; 
+			bottom: 0px; 
+		}
+		.perpus{
+			position:absolute;background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/de5vho1-16621ed6-e025-43a4-be96-4ea977ec108f.png/v1/fill/w_1033,h_773,q_70,strp/akatsuki_wallpaper__nxb_ninja_tribes__by_maxiuchiha22_de5vho1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGU1dmhvMS0xNjYyMWVkNi1lMDI1LTQzYTQtYmU5Ni00ZWE5NzdlYzEwOGYucG5nIiwid2lkdGgiOiI8PTE0NDMifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YeNdmo44LVyUb_leYxuWe9rEqa7rEp-iZKZqsdyjpFk); 
+			width: 90%; 
+			height: 160px; 
+			margin-left: 75px; 
+			margin-top: 20px; 
+			border-radius: 30px;
+		}
+		.genre{
+			width: 10%;
+			background: #f0f2f5;  
+			font-size: 14px; 
+			border: 0px; 
+			height: 30px; 
+			border-radius: 5px; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center; 
+			color: blue;
+		}
+		.a{
+			animation-name: e;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes e{
+			0%{left: 0%;}
+			50%{left: 31%;}
+			100%{left: 0%;}
+		}
+		.b{
+			animation-name: f;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes f{
+			0%{left: 86%;}
+			50%{left: 57.3%;}
+			100%{left: 86%;}
+		}
+		.active{
+			background: linear-gradient(140deg, hsl(312, 100%, 50%) 0%, hsl(248, 100%, 72%)	 50%, hsl(270, 100%, 50%) 75%)
+		}
+		.tabelbawah{
+			height: 30px; 
+			clear: both; 
+			border: 0pt;
+			margin-top: 15px;
+			font-size: 20px;
+		}
+		.tabelbawahkiri{
+			height: 30px; 
+			border: 0pt;
+			margin-top: 15px;
+			font-size: 20px;
+		}
+		.isiform{
+			width: 150%; 
+			height: 40px; 
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%);
+			position: absolute;
+			border: 1px solid whitesmoke;
+			border-radius: 5px;
+			color: white;
+			text-align: center;
+			font-size: 16.5px;
+			font-family: "Trirong", serif;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-family: cursive;
+		}
+		li a:hover{
+			background-color: #212;
+			color: white;
+		}
+		.input {
+			padding: 0; 
+			height: 30px; 
+			width: 150px; 
+			border-radius: 5px;
+			border: 1px solid #f0f2f5; 
+			background: #f0f2f5; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		a:hover{
+			color: red; 
+			word-spacing: 0.5cm
+		}
+		h1{
+			font-size: 30px; 
+			color: white; 
+			font-family: sans-serif;
+		}
+		.button {
+			display: inline-block;
+			padding: 15px 25px;
+			font-size: 24px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			color: #fff;
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(312, 100%, 50%)	30%, hsl(330, 100%, 50%) 40%);
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+		}
+
+		.button:hover {background-color: #3e8e41}
+
+		.button:active {
+			background-image: repeating-conic-gradient(hsl(240, 25%, 35%) 10%, hsl(288, 100%, 50%) 20%, hsl(348, 83%, 47%)	30%, hsl(336, 100%, 50%) 40%);
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+		.c{
+			animation-name: popup;
+			animation-duration: 0.8s;
+			animation-iteration-count: 1;
+		}
+		@keyframes popup{
+			0%{top: 25px}
+			100%{top: 0px}
+		}
+	</style>
+</head>
+<body>
+	<body style="margin:0">
+	<div class="header" style="margin-top: 0px">
+		<div>
+			<img src="https://cdn.dribbble.com/users/7049949/screenshots/16300841/media/3313f3b598138cad0b897434c5963cf3.png?resize=400x300&vertical=center" style="position: relative;width: 130px; height: 110px; float: left;">
+			<h1 style="position: relative; float: left;margin-top: 30px;">| BRANDON MANGA</h1>
+		</div>
+		<div  style="position: absolute;margin-left: 80%; float: left;margin-top: 30px;">
+			<input value name="s" id="s" placeholder="Brandon Manga" type="text" class="input">
+		</div>
+		<div style="position: absolute;margin-left: 92%; float: left;margin-top: 30px;">
+			<form>
+			<input class="searchicon" value="Cari" type="submit" style="width:45px; height: 30px;">
+		</form>
+		</div>
+		<div style="position:absolute; margin-left: 66%; margin-top: 30px;">
+			<video src="https://www.shutterstock.com/shutterstock/videos/1110662381/preview/stock-footage-icon-animation-sharingan-k-video-footage-alpha-channel-transparency.webm" autoplay muted loop style="width: 150px"></video>
+		</div>
+		<div style="position:absolute; margin-left: 39%; margin-top: 0px;">
+			<img src="https://wallpaperaccess.com/full/203905.png" style="width: 300px; height: 100px;">
+		</div>
+		<div style="position: absolute; margin-top: 85px; margin-left: 510px">
+			<a class="text"><a class="text" href="file:///C:/Users/HP/Downloads/file%20projek/index.html">Beranda </a><a href="Pembelian.html" class="text">| Pembelian </a><a href="Keterangan.html" class="text">| Keterangan</a></a>
+		</div>
+		<div style="position:absolute;margin-left: 79.3%; margin-top: 80px;">
+			<a href="https://www.instagram.com/bear__bran/"><img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" style=" width:60px; height: 60px; "></a>
+			<a href="https://www.tiktok.com/@bear.bran_"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_1280.png" style=" width:60px; height: 60px; margin-left:14pt"></a>
+			<a href="user.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsLH5A8wMAUoyWgL5fKpOrbwRVzm_a2BRzQ&s" style=" width:50px; height: 45px; margin-left:14pt; margin-bottom: 5pt;"></a>
+		</div>
+	</div>
+
+	<div class="berandabawah">
+		<img src="https://i.ibb.co.com/qnXjDGK/Buruan-Beli-di-Brandon-Manga-3.jpg" style="width: 400px; height: 600px; border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 5%; margin-top: 3%; position: relative; float: left;">
+		<div class="berandaisi" style="margin-left:3%; margin-top: 3%;">
+			<h2 align="center">I'm the Web Developer</h2>
+
+			<p align="center" style="margin-inline: 5%;">Hi! Nama saya Brandon Alexandro Sutanto, seorang siswa kelas 11H dengan nomor absen 05. Saya lahir pada 22 September 2008, dan saat ini berusia 16 tahun. Saya berasal dari Malang dan memiliki ketertarikan besar di bidang matematika, fisika, kimia, dan informatika. Saat ini, saya sedang aktif mengerjakan sebuah proyek web bernama <font color="red">Brandon Manga</font>, sebuah platform yang berfokus pada penjualan dan distribusi manga ke seluruh dunia.</p>
+
+			<p align="center" style="margin-inline: 5%;">Sebagai seorang murid informatika kelas 2INF04, tentunya saya bertanggung jawab untuk merancang, membangun, dan mengelola website <font color="red">Brandon Manga</font> agar dapat memberikan pengalaman terbaik bagi pengguna. Dengan kombinasi antara kehebatan dan ketampanan saya sebagai murid dan pembaca manga, saya berharap dapat memberikan kontribusi positif dalam dunia penjualan manga online, serta terus belajar dan mengembangkan keterampilan saya di dunia perwibuan.</p>
+
+			<p align="center" style="margin-inline: 5%;">Saya sendiri orangnya sangat periang gembira yang ramah nan baik dan rajin menabung. Saya berharap semua pembeli maupun pembaca di <font color="red">Brandon Manga</font> sudah menebak hal ini sejak mereka baru membuka web ini. Meskipun saya seorang wibu yang tidak terlalu brutal, saya hanya menonton anime sesekali, namun ilmu saya soal anime jangan diragukan lagi. Saya sudah <b>Top Class Graduate</b> dalam dunia perwibuan maupun peranimean</p>
+		</div>
+
+		<img src="https://ruangbelajar.smakkosayu.sch.id/foto/0231902322733785Br.jpg" style="width: 400px; height: 540px; border-radius: 5px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 5%; margin-top: 5%; position: relative; float: left;">
+		<div class="berandaisi" style="margin-left:3%; margin-top: 5%; height: 540px">
+			<h2 align="center">This Is The Biography</h2>
+
+			<div style="position : relative;background-color: whitesmoke; width: 40%; float: left; margin-left: 3%; margin-top: 0%; height: 80%; ">
+				<div class="tabelbawah" style="margin-top: 0px;">
+					Nama Lengkap
+				</div>
+				<div class="tabelbawah">
+					Nama Panggilan
+				</div>
+				<div class="tabelbawah">
+					Kelas/No. Absen
+				</div>
+				<div class="tabelbawah">
+					Tanggal dan tempat lahir
+				</div>
+				<div class="tabelbawah">
+					Usia
+				</div>
+				<div class="tabelbawah">
+					Jenis Kelamin
+				</div>
+				<div class="tabelbawah">
+					Kebangsaan
+				</div>
+				<div class="tabelbawah">
+					Hobi
+				</div>
+				<div class="tabelbawah">
+					Bersaudara
+				</div>
+				<div class="tabelbawah">
+					Filosofi
+				</div>
+			</div>
+			<div style="position : relative;background-color: whitesmoke; width: 50%; float: left; margin-top: 0%;">
+				<div class="tabelbawahkiri" style="margin-top: 0px;">
+					: Brandon Alexandro Sutanto
+				</div>
+				<div class="tabelbawahkiri">
+					: Brandon 
+				</div>
+				<div class="tabelbawahkiri">
+					: XI-H-INF04/05
+				</div>
+				<div class="tabelbawahkiri">
+					: Malang, 22 September 2008 
+				</div>
+				<div class="tabelbawahkiri">
+					: 16 tahun 
+				</div>
+				<div class="tabelbawahkiri">
+					: Pria 
+				</div>
+				<div class="tabelbawahkiri">
+					: Warga Negara Indonesia 
+				</div>
+				<div class="tabelbawahkiri">
+					: Bermain musik dan menonton film  
+				</div>
+				<div class="tabelbawahkiri">
+					: Tunggal  
+				</div>
+				<div class="tabelbawahkiri">
+					: Not <b>Impossible</b> but <b>I'm possible</b>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

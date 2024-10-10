@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pembelian</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<link rel="shortcut icon" href="https://i.ibb.co.com/XC6Mb3x/p-removebg-preview.png">
+	<style>
+		.header{
+			background-color: black; 
+			width: 100%;
+			height: 150px; 
+			margin-top: 0px;
+			position: absolute;
+		}
+		.berandabawah{
+			position: absolute;
+			background-color: darkgrey; 
+			width: 100%; 
+			height: 2400px; 
+			margin-top: 150px;
+		}
+		.berandaisi{
+			position:absolute;
+			background-color:whitesmoke; 
+			width: 88.8%; 
+			height: 1220px; 
+			margin-left: 5.5%; 
+			border-radius: 5px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.text{
+			text-decoration: none; 
+			color: white; 
+			font-family: fantasy; 
+			font-weight: medium; 
+			font-size: 25px
+		}
+		.gmbrberanda{
+			width: 240px; 
+			height: 150px; 
+			float: left; 
+			clear: both; 
+			bottom: 0pt;
+		}
+		.judulgmbrberanda{
+			position: relative;
+			background-color: whitesmoke; 
+			width: 240px; 
+			float: left; 
+			clear: both;
+		}
+		.chaptergmbrberanda{
+			position: relative;
+			background-color: lightgrey; 
+			float: left; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		.searchicon{
+			display: block;
+			padding: 0 10px;
+			background: #4c4c4c;
+			color: #fff;
+			font-weight: 700; 
+			border: none;
+		} 
+		.copyright{
+			position: absolute; 
+			background-image: url(https://i.pinimg.com/originals/f2/8d/5d/f28d5d909fdd8b5e8e35ef499037126f.jpg); 
+			width: 100%; 
+			height: 180px; 
+			bottom: 0px; 
+		}
+		.perpus{
+			position:absolute;background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83ec-311e72e82900/de5vho1-16621ed6-e025-43a4-be96-4ea977ec108f.png/v1/fill/w_1033,h_773,q_70,strp/akatsuki_wallpaper__nxb_ninja_tribes__by_maxiuchiha22_de5vho1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzg0ZGMxM2I3LWEyZTctNGI0NS04M2VjLTMxMWU3MmU4MjkwMFwvZGU1dmhvMS0xNjYyMWVkNi1lMDI1LTQzYTQtYmU5Ni00ZWE5NzdlYzEwOGYucG5nIiwid2lkdGgiOiI8PTE0NDMifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.YeNdmo44LVyUb_leYxuWe9rEqa7rEp-iZKZqsdyjpFk); 
+			width: 90%; 
+			height: 160px; 
+			margin-left: 75px; 
+			margin-top: 20px; 
+			border-radius: 30px;
+		}
+		.genre{
+			width: 10%;
+			background: #f0f2f5;  
+			font-size: 14px; 
+			border: 0px; 
+			height: 30px; 
+			border-radius: 5px; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center; 
+			color: blue;
+		}
+		.a{
+			animation-name: e;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes e{
+			0%{left: 0%;}
+			50%{left: 31%;}
+			100%{left: 0%;}
+		}
+		.b{
+			animation-name: f;
+			animation-duration: 6s;
+			animation-iteration-count: 10000000;
+		}
+		@keyframes f{
+			0%{left: 86%;}
+			50%{left: 57.3%;}
+			100%{left: 86%;}
+		}
+		.active{
+			background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%)
+		}
+		.tabelbawah{
+			height: 30px; 
+			font-family: arial; 
+			clear: both; 
+			border: 0pt;
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.tabelbawahkiri{
+			height: 30px; 
+			font-family: arial; 
+			border: 0pt;
+			margin-top: 40px;
+			font-size: 20px;
+		}
+		.isiform{
+			width: 150%; 
+			height: 40px; 
+			background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%); 
+			position: absolute;
+			border: 1px solid whitesmoke;
+			border-radius: 5px;
+			color: white;
+			text-align: center;
+			font-size: 16.5px;
+			font-family: "Trirong", serif;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-family: cursive;
+		}
+		li a:hover{
+			background-color: #212;
+			color: white;
+		}
+		.input {
+			padding: 0; 
+			height: 30px; 
+			width: 150px; 
+			border-radius: 5px;
+			border: 1px solid #f0f2f5; 
+			background: #f0f2f5; 
+			display: flex;
+			align-items: center; 
+			text-align: center; 
+			justify-content: center;
+		}
+		a:hover{
+			color: red; 
+			word-spacing: 0.5cm
+		}
+		h1{
+			font-size: 30px; 
+			color: white; 
+			font-family: sans-serif;
+		}
+		.button {
+			background: whitesmoke;
+			border: none;
+			color: whitesmoke;
+			padding: 16px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+		}
+
+		.button1 {
+			background-color: whitesmoke; 
+			color: black; 
+			border: 2px solid black;
+		}
+
+		.button1:hover {
+			background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%);
+			color: white;
+			border: 2px solid whitesmoke;
+		}
+	</style>
+</head>
+<body style="margin:0">
+	<div class="header" style="margin-top: 0px">
+		<div>
+			<img src="https://cdn.dribbble.com/users/7049949/screenshots/16300841/media/3313f3b598138cad0b897434c5963cf3.png?resize=400x300&vertical=center" style="position: relative;width: 130px; height: 110px; float: left;">
+			<h1 style="position: relative; float: left;margin-top: 30px;">| BRANDON MANGA</h1>
+		</div>
+		<div  style="position: absolute;margin-left: 80%; float: left;margin-top: 30px;">
+			<input value name="s" id="s" placeholder="Brandon Manga" type="text" class="input">
+		</div>
+		<div style="position: absolute;margin-left: 92%; float: left;margin-top: 30px;">
+			<form>
+			<input class="searchicon" value="Cari" type="submit" style="width:45px; height: 30px;">
+		</form>
+		</div>
+		<div style="position:absolute; margin-left: 66%; margin-top: 30px;">
+			<video src="https://www.shutterstock.com/shutterstock/videos/1110662381/preview/stock-footage-icon-animation-sharingan-k-video-footage-alpha-channel-transparency.webm" autoplay muted loop style="width: 150px"></video>
+		</div>
+		<div style="position:absolute; margin-left: 39%; margin-top: 0px;">
+			<img src="https://wallpaperaccess.com/full/203905.png" style="width: 300px; height: 100px;">
+		</div>
+		<div style="position: absolute; margin-top: 85px; margin-left: 510px">
+			<a class="text"><a class="text" href="file:///C:/Users/HP/Downloads/file%20projek/index.html">Beranda </a><a href="Pembelian.html" class="text">| Pembelian </a><a href="Keterangan.html" class="text">| Keterangan</a></a>
+		</div>
+		<div style="position:absolute;margin-left: 79.3%; margin-top: 80px;">
+			<a href="https://www.instagram.com/bear__bran/"><img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" style=" width:60px; height: 60px; "></a>
+			<a href="https://www.tiktok.com/@bear.bran_"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/28/tiktok-6338429_1280.png" style=" width:60px; height: 60px; margin-left:14pt"></a>
+			<a href="user.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsLH5A8wMAUoyWgL5fKpOrbwRVzm_a2BRzQ&s" style=" width:50px; height: 45px; margin-left:14pt; margin-bottom: 5pt;"></a>
+		</div>
+	</div>
+
+
+	<div class="berandabawah">
+		<div style="display: flex; align-items: center; text-align: center; justify-content: center; background-color:">
+			<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; position: relative; float: left; color: white;">Daftar Harga Komik</h1>
+			<div style="background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%);; color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:230px; display: flex; align-items: center; text-align: center; justify-content: center;">Brandon Manga</h1>
+			</div>
+		</div>
+
+		<div style=" width: 88% ; margin-left: 6.5%; margin-right: 5%;">
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2021/03/Komik-Tsue-to-Tsurugi-no-Wistoria.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Tsue to Tsurugi no Wistoria</b><br>Fantasi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 150.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2021/02/Komik-Ore-wa-Subete-wo-Parry-Suru.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Ore wa Subete wo Parry ...</b><br>Fantasi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 100.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Maou-Gun-Saikyou-no-Majutsushi-wa-Ningen-datta.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Maou Gun Saikyou no ... </b><br>Isekai</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 120.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style=" width: 88% ; margin-left: 6.5%; margin-right: 5%; margin-top: 10%; background-color: black; z-index: +10;">
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2020/05/Komik-Oshi-no-Ko.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Oshi no Ko</b><br>Drama</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 200.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2022/08/Komik-Gimai-Seikatsu.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Gimai Seikatsu</b><br>Romance</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 100.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2023/04/Back-Isekai-Shikkaku.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Isekai Shikkaku</b><br>Isekai</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 120.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style=" width: 88% ; margin-left: 6.5%; margin-right: 5%; margin-top: 20%;">
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2024/07/A1-Shikanoko-Nokonoko-Koshitantan.png?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Shikanoko Nokonoko ...</b><br>Comedy</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 150.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2019/03/Fairy-Tail-100-Years-Quest.png?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Fairy Tail : 100 Years ...</b><br>Fantasi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 200.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/2023/09/Back-Boruto-Two-Blue-Vortex.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Boruto : Two Blue ...</b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 300.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style=" width: 88% ; margin-left: 6.5%; margin-right: 5%; margin-top: 30%;">
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-One-Piece.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>One Piece</b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 1.000.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Boruto.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Boruto : Naruto Next ...</b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 250.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-One-Punch-Man.png?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>One Punch Man</b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 500.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style=" width: 88% ; margin-left: 6.5%; margin-right: 5%; margin-top: 40%;">
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Tensei-Shitara-Slime-Datta-Ken.png?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Tensi Shitara Slime ..</b><br>Isekai</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 450.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Boku-no-Hero-Academia.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Boku no Hero Academia</b><br>Comedy</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 750.000,-</p>
+				</div>
+			</div>
+			<div style="background-color: whitesmoke; width: 380px; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Kimetsu-no-Yaiba.jpg?resize=240,150" style="width: 150px; height: 100px; padding: 10px; border-radius: 5px; position: relative; float: left;">
+				<p style=" margin-left: 0px; position: relative; float: left; font-family: segoe ui;"><b>Kimetsu no Yaiba</b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px;">
+					<p style="font-family: segoe ui">Rp 650.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-top: 50%; width: 100%">
+			<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; position: relative; float: left; color: white;">Best Seller</h1>
+			<div style="background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%);; color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:230px; display: flex; align-items: center; text-align: center; justify-content: center; ">Brandon Manga</h1>
+			</div>
+		</div>
+
+		<div style=" width: 88.9% ; margin-left: 5.5%; margin-right: 5%; margin-top: 0%;">
+			<div style="background-color: whitesmoke; width:100%; height: 120px; border-radius: 5px; position: relative; float: left; margin-left: 0px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Black-Clover.jpg?resize=240,150" style="width: 150px; height: 100px; position: absolute; padding: 10px" class="a">
+				<img src="https://cover.komiku.id/wp-content/uploads/Manga-Black-Clover.jpg?resize=240,150" style="width: 150px; height: 100px; position: absolute; padding: 10px" class="b">
+				<p style="margin-left: 46.5%; position: absolute; font-family: segoe ui; font-size: 20px; text-align: center; margin-top: 1%;"><b>Black <font style="color: hsl(120,100%,25%)">Clover</font></b><br>Aksi</p>
+				<div class="chaptergmbrberanda" style="width: 150px; height: 30px; border-radius: 3px; margin-top: 6.5%; margin-left: 45%;">
+					<p style="font-family: segoe ui">Rp 650.000,-</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="display: flex; align-items: center; text-align: center; justify-content: center; margin-top: 10%; width: 100%; margin-top: 15%;">
+			<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; position: relative; float: left; color: white;">Form Pembelian</h1>
+			<div style="background: linear-gradient(140deg, hsl(120,100%,25%) 0%, hsl(120,100%,50%) 50%, hsl(290,60%,70%) 75%); color: red; border-radius: 4px; position: relative; float: left; margin-left: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+				<h1 style="font-family: trebuchet ms, Helvetica, sans-serif; color: white; height: 10px; width:230px; display: flex; align-items: center; text-align: center; justify-content: center;">Brandon Manga</h1>
+			</div>
+		</div>
+
+		<div class="berandaisi">
+			<ul>
+				<li><a href="Pembelian.html">Pemesanan</a></li>
+				<li><a class="active" href="Pembelian1.html">Pembayaran</a></li>
+				<li><a href="Pembelian2.html">Lokasi</a></li>
+				<li><a href="Pembelian3.html">Catatan</a></li>
+			</ul>
+				<div style="position : relative;background-color: whitesmoke; width: 40%; float: left; margin-left: 3%; margin-top: 3%; height: 90%; ">
+							<div class="tabelbawah" style="margin-top: 0px;">
+								Transfer
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								Bukti Transfer
+							</div>
+							<div class="tabelbawah">
+								Kartu Debit/Kredit
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								13 Digit Account Number
+							</div>
+							<div class="tabelbawah">
+								3/4 Digit Code CVV
+							</div>
+							<div class="tabelbawah">
+								Cicilan Kartu Kredit
+							</div>
+							<div class="tabelbawah">
+								
+							</div>
+							<div class="tabelbawah">
+								Cash On Delivery
+							</div>
+							<div class="tabelbawah" style="margin-top: 80px">
+								<a href="Pembelian2.html"><button class="button button1">Submit</button></a>
+							</div>
+						</div>
+						<div style="position : relative;background-color: whitesmoke; width: 35.45%; float: left; margin-top: 3%;">
+							<form>
+								<div class="tabelbawahkiri" style="margin-top: 0px;">
+									<input type="radio" name="a" value="a" id="s">BCA(081247583)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">BRI(088623468)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Mandiri(03423469233)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Gopay(92387387587345)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">OVO(1394638368293738)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Shopee Pay(84652846494639)
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									<input type="file" value="" class="isiform" style="padding-left: 20px; padding-top: 7px; width: 146%;">
+								</div>
+								<div class="tabelbawahkiri">
+									<input type="radio" name="a" value="a" id="s">HSBC
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">UOB
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Citibank
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Bank Danamon
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">Bank Mega
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">BTN
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									&nbsp;<input type="number" name="a" class="isiform">
+								</div>
+								<div class="tabelbawahkiri">
+									&nbsp;<input type="password" name="a" class="isiform">
+								</div>
+								<div class="tabelbawahkiri">
+									<input type="radio" name="a" value="a" id="s">6 Bulan (Bunga 10%)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">8 Bulan (Bunga 20%)
+									<br>
+									<br><input type="radio" name="a" value="a" id="s">12 Bulan (Bunga 100%)
+								</div>
+								<div class="tabelbawahkiri">
+									
+								</div>
+								<div class="tabelbawahkiri">
+									<input type="radio" name="a" value="a" id="s"><font color="red">*</font>Siapkan Uang Pas
+								</div>
+							</form>
+						</div>
+		</div>
+	</div>
+</body>
+</html>
+				
